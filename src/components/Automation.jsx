@@ -110,7 +110,7 @@ export default function Automation() {
     <section
       ref={sectionRef}
       id="automation-testing"
-      className="py-24 bg-[#FAFAFA] border-b-4 border-black relative overflow-hidden"
+      className="py-24 bg-[#FAFAFA] border-b-4 border-black relative overflow-hidden brutal-grid"
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
         

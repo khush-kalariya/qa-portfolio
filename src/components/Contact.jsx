@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { FaEnvelope, FaPhoneAlt, FaLinkedin, FaGithub, FaMapMarkerAlt, FaPaperPlane, FaCheckCircle, FaTerminal } from "react-icons/fa";
 import { gsap } from "gsap";
+import BackgroundBugs from "./BackgroundBugs";
 
 export default function Contact() {
   const [formData, setFormData] = useState({ name: "", email: "", subject: "", message: "" });
@@ -123,6 +124,7 @@ export default function Contact() {
       id="contact"
       className="py-24 bg-[#FAFAFA] border-b-4 border-black relative overflow-hidden brutal-grid"
     >
+      <BackgroundBugs count={4} />
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
         
         {/* Header */}

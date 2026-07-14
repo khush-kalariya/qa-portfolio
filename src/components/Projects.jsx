@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { FaGithub, FaExternalLinkAlt, FaTools, FaExclamationTriangle, FaCheckCircle } from "react-icons/fa";
 import { gsap } from "gsap";
+import BackgroundBugs from "./BackgroundBugs";
 import qashieldImg from "../assets/project_qashield.png";
 import mockdeployImg from "../assets/project_mockdeploy.png";
 import a11ywatchImg from "../assets/project_a11ywatch.png";
@@ -103,8 +104,9 @@ export default function Projects() {
     <section
       ref={sectionRef}
       id="projects"
-      className="py-24 bg-[#FAFAFA] border-b-4 border-black relative overflow-hidden"
+      className="py-24 bg-[#FAFAFA] border-b-4 border-black relative overflow-hidden brutal-grid"
     >
+      <BackgroundBugs count={4} />
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
         
         {/* Header */}

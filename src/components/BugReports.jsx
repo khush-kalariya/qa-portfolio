@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { FaBug, FaChrome, FaMobileAlt, FaServer, FaCheckCircle, FaExclamationTriangle } from "react-icons/fa";
 import { gsap } from "gsap";
+import BackgroundBugs from "./BackgroundBugs";
 
 const bugReports = [
   {
@@ -88,8 +89,9 @@ export default function BugReports() {
     <section
       ref={sectionRef}
       id="bugreports-showcase"
-      className="py-24 bg-[#FAFAFA] border-b-4 border-black relative brutal-dots"
+      className="py-24 bg-[#FAFAFA] border-b-4 border-black relative brutal-grid"
     >
+      <BackgroundBugs count={4} />
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
         
         {/* Header */}

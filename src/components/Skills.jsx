@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import BackgroundBugs from "./BackgroundBugs";
 import { 
   FaBug, FaHistory, FaFire, FaShieldAlt, FaDesktop, FaUserCheck, FaPuzzlePiece, 
   FaCompass, FaServer, FaDatabase, FaTasks, FaMobileAlt, FaClipboardList
@@ -117,8 +118,9 @@ export default function Skills() {
     <section
       ref={sectionRef}
       id="skills"
-      className="py-24 bg-[#FAFAFA] border-b-4 border-black relative brutal-dots"
+      className="py-24 bg-[#FAFAFA] border-b-4 border-black relative brutal-grid"
     >
+      <BackgroundBugs count={4} />
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
         
         {/* Header */}

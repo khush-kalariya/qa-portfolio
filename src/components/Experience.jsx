@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { FaCalendarAlt, FaBuilding, FaBullseye } from "react-icons/fa";
 import { gsap } from "gsap";
+import BackgroundBugs from "./BackgroundBugs";
 
 const experiences = [
   {
@@ -98,6 +99,7 @@ export default function Experience() {
       id="experience"
       className="py-24 bg-[#FAFAFA] border-b-4 border-black relative overflow-hidden brutal-grid"
     >
+      <BackgroundBugs count={4} />
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
         
         {/* Header */}

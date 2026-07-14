@@ -4,6 +4,7 @@ import {
 } from "react-icons/fa";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import BackgroundBugs from "./BackgroundBugs";
 
 const workflowSteps = [
   {
@@ -131,6 +132,7 @@ export default function Workflow() {
     <div ref={containerRef} id="testing" className="relative bg-[#FAFAFA] border-b-4 border-black select-none">
       {/* Sticky Content Window */}
       <div className="h-screen w-full flex flex-col justify-between py-12 md:py-16 overflow-hidden relative brutal-grid">
+        <BackgroundBugs count={4} />
         
         {/* Top Title Section */}
         <div className="px-6 md:px-12 flex justify-between items-end flex-shrink-0">

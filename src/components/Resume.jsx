@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { FaDownload, FaEye, FaFileSignature, FaUserCircle, FaBook, FaBriefcase, FaEnvelope, FaLink } from "react-icons/fa";
 import { gsap } from "gsap";
+import BackgroundBugs from "./BackgroundBugs";
 import resumeFile from "../assets/resume.pdf";
 
 export default function Resume() {
@@ -51,6 +52,7 @@ export default function Resume() {
       id="resume"
       className="py-24 bg-[#FAFAFA] border-b-4 border-black relative overflow-hidden brutal-grid"
     >
+      <BackgroundBugs count={4} />
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
         
         {/* Header */}

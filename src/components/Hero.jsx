@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { FaArrowRight, FaMapMarkerAlt, FaDownload, FaBriefcase } from "react-icons/fa";
+import BackgroundBugs from "./BackgroundBugs";
 import heroPortrait from "../assets/hero_portrait.png";
 
 export default function Hero() {
@@ -13,6 +14,8 @@ export default function Hero() {
       id="home"
       className="relative min-h-screen pt-36 pb-24 flex items-center justify-center brutal-grid overflow-hidden border-b-4 border-black"
     >
+      {/* Decorative Floating Bugs in Background */}
+      <BackgroundBugs count={7} />
       {/* Main Grid Layout */}
       <div className="max-w-7xl mx-auto px-8 md:px-16 w-full grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center relative z-10">
 

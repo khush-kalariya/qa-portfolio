@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import { FaCheckCircle, FaTimesCircle, FaPlus, FaMinus, FaFilter } from "react-icons/fa";
 import { gsap } from "gsap";
+import BackgroundBugs from "./BackgroundBugs";
 
 const testCases = [
   {
@@ -119,6 +120,7 @@ export default function TestCases() {
       id="testcases-showcase"
       className="py-24 bg-[#FAFAFA] border-b-4 border-black relative brutal-grid"
     >
+      <BackgroundBugs count={4} />
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
         
         {/* Header */}

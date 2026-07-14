@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { FaGraduationCap, FaLanguage, FaGlobe, FaSearchPlus, FaHistory } from "react-icons/fa";
 import { gsap } from "gsap";
+import BackgroundBugs from "./BackgroundBugs";
 
 export default function About() {
   const sectionRef = useRef(null);
@@ -65,8 +66,9 @@ export default function About() {
     <section
       ref={sectionRef}
       id="about"
-      className="py-24 bg-[#FAFAFA] border-b-4 border-black relative overflow-hidden"
+      className="py-24 bg-[#FAFAFA] border-b-4 border-black relative overflow-hidden brutal-grid"
     >
+      <BackgroundBugs count={4} />
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
         
         {/* Section Heading */}
