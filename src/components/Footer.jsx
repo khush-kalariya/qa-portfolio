@@ -84,10 +84,10 @@ export default function Footer() {
                 <FaTwitter />
               </a>
               <a
-                href="mailto:alex.mercer.qa@example.com"
+                href="mailto:khush.kalariya.qa@example.com"
                 data-magnetic
                 className="w-10 h-10 border-2 border-black bg-white hover:bg-[#00E5FF] flex items-center justify-center text-black shadow-[2px_2px_0px_rgba(0,0,0,1)] active:translate-x-0.5 active:translate-y-0.5 active:shadow-[0px_0px_0px_rgba(0,0,0,1)] transition-all"
-                aria-label="Email Alex"
+                aria-label="Email Khush"
               >
                 <FaEnvelope />
               </a>

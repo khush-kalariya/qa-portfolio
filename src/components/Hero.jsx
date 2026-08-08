@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { FaArrowRight, FaMapMarkerAlt, FaDownload, FaBriefcase } from "react-icons/fa";
 import BackgroundBugs from "./BackgroundBugs";
-import heroPortrait from "../assets/hero_portrait.png";
+import heroPortrait from "../assets/khush_profile.jpg";
 
 export default function Hero() {
   const handleScrollTo = (id) => {
@@ -97,15 +97,21 @@ export default function Hero() {
         {/* ── RIGHT COLUMN ── */}
         <div className="lg:col-span-5 flex flex-col gap-5 items-stretch">
 
-          {/* Photo Frame — 3-layer border like reference */}
+          {/* Photo Frame — with small floating brutalist tags */}
           <div className="relative w-full group">
+
+            {/* Floating Pinned Tag: Top-Right (Black - MANUAL QA) */}
+            <div className="absolute -top-4 -right-3 z-20 bg-[#111111] text-white border-2 border-black px-3 py-1 text-xs font-mono font-black uppercase shadow-[3px_3px_0px_#000000] rotate-[4deg] pointer-events-none">
+              MANUAL QA
+            </div>
+
             {/* The flat shadow element that stays upright and changes to pink */}
             <div className="absolute inset-0 bg-black border-4 border-black translate-x-1.5 translate-y-1.5 transition-colors duration-300 group-hover:bg-[#FF2D75]" />
 
             {/* The main card that rotates on hover */}
-            <div className="relative w-full p-5 bg-[#f0f0f0] border-4 border-black transition-all duration-300 group-hover:rotate-[-2deg] group-hover:-translate-x-1 group-hover:-translate-y-1 cursor-pointer">
-              {/* Inner black bordered frame with yellow bg */}
-              <div className="relative border-4 border-black overflow-hidden bg-[#FFD600]" style={{ height: '26rem' }}>
+            <div className="relative w-full p-4 bg-[#f0f0f0] border-4 border-black transition-all duration-300 group-hover:rotate-[-2deg] group-hover:-translate-x-1 group-hover:-translate-y-1 cursor-pointer">
+              {/* Inner black bordered frame with yellow bg - 1:1 Perfect Square */}
+              <div className="relative border-4 border-black overflow-hidden bg-[#FFD600] aspect-square w-full">
                 <img
                   src={heroPortrait}
                   alt="Khush Kalariya QA Portrait"
@@ -115,8 +121,8 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Info Cards — stacked vertically */}
-          <div className="flex flex-col gap-4">
+          {/* Info Cards — stacked vertically with top margin gap */}
+          <div className="flex flex-col gap-4 mt-6">
 
             {/* Status Card */}
             <div className="bg-white border-4 border-black p-4 shadow-[4px_4px_0px_#000000] text-left">

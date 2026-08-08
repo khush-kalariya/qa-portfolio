@@ -21,7 +21,7 @@ const workflowSteps = [
     icon: FaMap,
     bg: "bg-[#FFD600]",
     textColor: "text-black",
-    desc: "Defining scope, resources, automated vs. manual split, test environments, entry/exit criteria, and milestone scheduling.",
+    desc: "Defining scope, testing coverage, test environments, entry/exit criteria, and milestone scheduling.",
   },
   {
     num: "03",
@@ -45,7 +45,7 @@ const workflowSteps = [
     icon: FaPlay,
     bg: "bg-[#111111]",
     textColor: "text-white",
-    desc: "Running manual suites, triggering local/CI automation rigs (Selenium, Cypress, Playwright), and inspecting console outputs.",
+    desc: "Running manual test suites, performing structured exploratory test sweeps, inspecting browser console, and validating APIs in Postman.",
   },
   {
     num: "06",

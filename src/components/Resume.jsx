@@ -85,7 +85,7 @@ export default function Resume() {
                 </p>
               </div>
               <div className="font-mono text-xs text-gray-500 space-y-1 text-left sm:text-right">
-                <p className="flex items-center sm:justify-end gap-1.5"><FaEnvelope /> alex.mercer.qa@example.com</p>
+                <p className="flex items-center sm:justify-end gap-1.5"><FaEnvelope /> khush.kalariya.qa@example.com</p>
                 <p className="flex items-center sm:justify-end gap-1.5"><FaLink /> github.com/khush-kalariya-qa</p>
               </div>
             </div>
@@ -181,7 +181,7 @@ export default function Resume() {
             <div className="flex flex-col gap-4">
               <a
                 href={resumeFile}
-                download="Alex_Mercer_QA_Resume.pdf"
+                download="Khush_Kalariya_QA_Resume.pdf"
                 className="brutal-btn-primary w-full py-3.5 text-sm uppercase flex items-center justify-center gap-2 border-4 shadow-[4px_4px_0px_#000000]"
                 data-magnetic
               >

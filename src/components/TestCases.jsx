@@ -17,8 +17,8 @@ const testCases = [
       "Trigger browser page refresh (Command+R / F5).",
       "Assert authentication header still contains profile avatar and username."
     ],
-    expected: "User session remains active. The header resolves and displays username 'Alex Mercer'.",
-    actual: "Session persisted. Header username remains 'Alex Mercer'.",
+    expected: "User session remains active. The header resolves and displays username 'Khush Kalariya'.",
+    actual: "Session persisted. Header username remains 'Khush Kalariya'.",
     status: "PASS",
   },
   {
